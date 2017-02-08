@@ -1,0 +1,1 @@
+To run the app, use npm install in any of the 3 folders question1, question2, question3 to install all the requirements.

@@ -1,0 +1,26 @@
+{
+  "name": "bootcamp-selflearningclinic-question1",
+  "version": "1.0.0",
+  "description": "Andela Bootcamp self learning clinic question 1",
+  "main": "app/library.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jasmine tests/tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anuonifade/bootcampselflearningclinic.git"
+  },
+  "author": "Anu Onifade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anuonifade/bootcampselflearningclinic/issues"
+  },
+  "homepage": "https://github.com/anuonifade/bootcampselflearningclinic#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "jasmine": "^2.5.2"
+  }
+}
