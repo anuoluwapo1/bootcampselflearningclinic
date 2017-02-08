@@ -3,69 +3,46 @@
 
 module.exports = {
 
-	aritGeo : function(numbers){
+	aritGeo : function (numbers){
 		if(numbers.length < 1){
 			return 0;
 		}
 		var a = numbers[0];
+		var arithProgression;
 		var d = numbers[1] - numbers[0];
+		var r = numbers[1] / numbers[0];
 		var i = 0;
-		var ap = false;
-		while(i < numbers.length -1){
-			if( i == 0){
-				arithProgression = numbers[0];
-			}
-			else
-			{
-				arithProgression = a + (i - 1) * d;
-			}
-			
-			if( arithProgression == numbers[i]){
-				ap = true;
+		var ap = true;
+		var gp = true;
+		for(i = 0; i < numbers.length - 1; i++){
+			if(numbers[i] === (a + (i * d))){
+				continue;
 			}
 			else{
-				ap = false;
+			  ap = false;
+			  break;
 			}
-			i++;
 		}
-		
-		if(ap == true){
+		if(ap === true){
 			return 'Arithmetic';
 		}
 		else{
-			this.isSequenceGeometric(numbers);
+			for(i = 0; i < numbers.length -1; i++){
+		  		if(numbers[i] === (a * Math.pow(r, i))){
+		  			continue;
+		  		}
+		  		else{
+		  			gp = false;
+		  			break;
+		  		}
+		  	}
+		  
+		  	if(gp === true){
+	  			return 'Geometric';
+	  		}
+	  		else{
+	  			return -1;
+	  		}
 		}
-	},
-
-	isSequenceGeometric : function(numbers){
-		var a = numbers[0];
-		var r = numbers[1] / numbers[0];
-		var i = 0;
-		var gp = false;
-		while(i < numbers.length -1){
-			if( i == 0){
-				geoProgression = numbers[0];
-			}
-			else
-			{
-				geoProgression = a * d ** i;
-			}
-			
-			if( geoProgression == numbers[i]){
-				gp = true;
-			}
-			else{
-				gp = false;
-			}
-			i++;
-		}
-		if(gp == true){
-			return 'Geometric';
-		}
-		else{
-			return -1;
-		}
-
-		
 	}
 }
