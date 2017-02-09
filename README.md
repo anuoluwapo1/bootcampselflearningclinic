@@ -1,4 +1,3 @@
-<!doctype html>
 <html>
 	<head>
 		<title>Read me file for Bootcamp self learning clinic</title>
