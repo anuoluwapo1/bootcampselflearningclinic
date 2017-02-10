@@ -15,7 +15,7 @@
 			<li> Install node. To install node please check the link https://howtonode.org/how-to-install-nodejs </li>
 			<li> cd to each folder e.g cd question1 .Run npm install in any of the 3 folders question1, question2, question3 to install all the requirements. </li>
 			<li> Install jasmine as global ( npm install -g jasmine). </li>
-			<li> To run the test on the code, run jasmine tests/tests.js </li>
+			<li> To run the test on the code, run - jasmine tests/tests.js </li>
 		</ol>
 	</body>
  </html>
